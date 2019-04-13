@@ -1,0 +1,34 @@
+{%extends "layout.htm"%}
+{%block content%}
+<html>
+<head>
+<title>Hello</title>
+<link href = "../static/css/style3.css", rel = "stylesheet", type = "text/css">
+</head>
+<body style = "text-align: justify">
+
+<h2>Sign up </h2>
+<form action = "hello.html" method = "POST">
+        NAME : <input type = "text" name = "Name"/>
+        <br><br>
+        DOB : <input type = "text" name = "dob"/>
+    <br><br>
+    EMAIL : <input type = "text" placeholder="Enter email" name = "email"/>
+    <br><br>
+    
+    PASSWORD : <input type = "password" name = "password"/><br><br>
+    CONFIRM PASSWORD : <input type = "password" name = "password"/>
+    <br><br>
+    GENDER   : <input type = "radio" name = "gender" value = "male"/>male
+        <input type = "radio" name = "gender" value = "female"/>female
+        <input type = "radio" name = "gender" value = "unknown"/>prefer not to disclose<br>
+    COURSE   : <input type = "radio" name = "course" value = "moodle"/>moodle
+        <input type = "radio" name = "course" value = "r"/>R
+        <input type = "radio" name = "course" value = "iot"/>IOT<br>
+    <input class =button1 type = "submit" name = "submit" value = "submit"/>
+    <input class =button1 type = "reset" name = "reset" value = "reset"/><br>
+</form>
+
+</body>
+</html>
+{%endblock%}

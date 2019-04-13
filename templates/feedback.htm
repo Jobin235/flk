@@ -1,0 +1,30 @@
+{%extends "layout.htm"%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href = "../static/css/style3.css", rel = "stylesheet", type = "text/css">
+</head>
+<body>
+        <h2>Feedback Form </h2>
+    <form>
+        <h4>Rate ur experience</h4><b>Enter your comments.</b><br><br>comment section :<br>
+        <form> 
+            <textarea rows = "5" cols="50" name = "description">
+            Your comments please...
+            </textarea>   
+            <br>Rate this site :
+            <select name = "dropdown">
+                <option value ="bad" >bad</option>
+                <option value ="average">average</option> 
+                <option value ="good">good</option>
+                <option value ="excellent" selected>excellent</option>
+            </select>
+        </form>
+</body>
+</html>
+{%endblock%}
